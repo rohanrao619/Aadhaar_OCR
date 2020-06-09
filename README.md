@@ -1,1 +1,2 @@
-# Aadhar_Card_OCR_and_Verification
+# Aadhaar_OCR
+Extraction, Verification and Masking of Aadhaar UIDs from photos and scanned documents.
