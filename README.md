@@ -1,6 +1,13 @@
 # Aadhaar OCR
 Extraction, Verification and Masking of Aadhaar UIDs from photos and scanned documents.
 
+## Solution
+
+The solution to the problem involves use of PyTesseract OCR engine and OpenCV for image processing. It can be divided into 3 Sub-Tasks:
+1. Extracting Aadhaar UID from photo using Tesseract.
+2. Verifying the extracted Aadhaar UIDs.
+3. Masking the first 8 digits of detected UIDs.
+
 ## Algorithms Used
 
 In our solution pipeline we use some algorithms such as:
