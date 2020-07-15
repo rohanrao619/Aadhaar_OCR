@@ -3,12 +3,12 @@ Extraction, Verification and Masking of Aadhaar UIDs from photos and scanned doc
 
 ## Solution
 
-The solution to the problem involves use of PyTesseract OCR engine and OpenCV for image processing. It can be divided into 3 Sub-Tasks:
+The solution to the problem involves use of PyTesseract Optical Character Recognition engine and OpenCV for image processing. It can be divided into 3 Sub-Tasks:
 1. Extracting Aadhaar UID from photo using Tesseract.
 2. Verifying the extracted Aadhaar UIDs.
 3. Masking the first 8 digits of detected UIDs.
 
-## Extracting Aadhaar UID
+## Extracting Aadhaar UIDs
 
 This task can be further divided into 2 Sub-Tasks:
 1) Preprocess the image and then use PyTesseract library to extract all recognizable text from the image with their corresponding bounding boxes.
@@ -20,8 +20,11 @@ a) Try without any processing.</br>
 b) If (a) doesn’t work, try using OpenCV’s Gaussian Blur to remove random noise, then try again.</br>
 c) If (b) doesn’t work, rotate the image by 90 degrees and try (a) and (b) again.
 
-In this way steps (a), (b) and (c) are repeated 4 times (for 0,90,180 and 270 degrees rotation) and if at any point UID candidates are found, we stop (as all UIDs in the image can be found in that particular setting). In case these steps fail to produce desired results, we produce the super resolution version of the image using ESRGAN and retry with the pipeline described above.
+In this way steps (a), (b) and (c) are repeated 4 times (for 0, 90, 180 and 270 degrees rotation) and if at any point UID candidates are found, we stop (as all UIDs in the image can be found in that particular setting). In case these steps fail to produce desired results, we produce the super resolution version of the image using ESRGAN and retry with the pipeline described above.
 
+## Verifying and Masking Aadhaar UIDs
+
+In this step we try to filter the invalid UIDs using the Verhoeff Algorithm as there can be many unintended RegEx matches that are not of use. It is basically a checksum validation method. We use OpenCV’s functions to black out the first 8 digits of every UID with the help of character wise bounding boxes found in the previous step.
 
 ## Algorithms Used
 
