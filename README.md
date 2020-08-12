@@ -40,3 +40,14 @@ In our solution pipeline we use some algorithms such as:
 5) RegEx : Used for Regular Expression searches.
 6) img2pdf and pdf2image : Used for handling .pdf files.
 7) ISR : Used for generating Super Resolution images.
+
+## Final Notes
+**Thanks for going through this Repository! Have a nice day.**</br>
+</br>**Got any Queries? Feel free to contact me.**</br>
+</br>**S Rohan Rao**
+<p align="left">
+<a href="mailto:rohanrao619@gmail.com"><img src="https://github.com/rohanrao619/Icons/blob/master/SVGs/Gmail.svg" height ="45" title="Gmail" alt="mailto:rohanrao619@gmail.com"></a>
+<a href="https://github.com/rohanrao619"><img src="https://github.com/rohanrao619/Icons/blob/master/SVGs/GitHub.svg" height ="45" title="GitHub" alt="https://github.com/rohanrao619"></a>
+<a href="https://www.linkedin.com/in/rohanrao619"><img src="https://github.com/rohanrao619/Icons/blob/master/SVGs/LinkedIn.svg" height ="45" title="LinkedIn" alt="https://www.linkedin.com/in/rohanrao619"></a>
+<a href="https://rohanrao619.github.io/"><img src="https://github.com/rohanrao619/Icons/blob/master/SVGs/Portfolio.svg" height ="45" title="Portfolio Website" alt="https://rohanrao619.github.io/"></a>
+</p>
